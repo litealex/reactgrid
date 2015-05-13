@@ -1,0 +1,43 @@
+@import "variables.less";
+.qtable {
+  &__wrapper {
+    position: relative;
+  }
+
+  display: table;
+  &__row {
+    position: relative;
+
+    &--top {
+
+    }
+    &--fixed {
+      position: fixed;
+    }
+  }
+
+  &__body {
+    overflow: hidden;
+    overflow-y: auto;
+  }
+
+  &__cell {
+    border-bottom: 1px solid @cell-border-color;
+    border-right: 1px solid @cell-border-color;
+    display: table-cell;
+    height: 100%;
+    box-sizing: border-box;
+
+    &--pin {
+      top:0;
+      position: absolute;
+      color: #fff;
+      background-color: #337ab7;
+      z-index: 2;
+    }
+  }
+  &__header {
+    overflow: hidden;
+
+  }
+}
